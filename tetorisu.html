@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+table {
+  border-collapse: collapse;
+}
+table td {
+  width:20px;
+  height:20px;
+  border:1px solid black;
+}
+</style>
+<script type="text/javascript">
+window.onload = function() {
+  var html = ['<table>']
+  html.push('<tr>')
+  for(var i = 0; i < 10; i++) html.push('<td></td>')
+  html.push('</tr>')
+  html.push('</table>')
+  document.getElementById('view').innerHTML = html.join('')
+}
+</script>
+<div id="view"></div>
